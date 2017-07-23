@@ -28,8 +28,6 @@ http://localhost:8000/round_reset - to start the new round
 
 Repeat the game for winners of previous round.
 
-http://localhost:8000/refree/- to get the final winner
-
-Repeat the
+http://localhost:8000/refree/- to get the final winner.
 
 Thanks
