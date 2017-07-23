@@ -8,24 +8,28 @@ go to the folder which has manage.py.
 
 run command "python manage.py runserver"
 
-http://localhost:8000/game(get) - for list of all joined players
+http://localhost:8000/game_reset-  To reset all the parameters of the joined players and to get  the information if the game should be started or not.
 
-http://localhost:8000/game(post)- for adding a new player
+http://localhost:8000/game/- Check all players' starting status
 
 http://localhost:8000/game/<id>(get)- for getting details of a perticular player
 
-http://localhost:8000/game(put)- update player username, password or joined status
+Players having same defencive array  will play together.
 
-** http://localhost:8000/reset- to reset all the parameters of the joined players and to get  the information if the game should be started or not.
+http://localhost:8000/game/<id>(put)- Add defencive array for defencive role player.
 
-*please donot start the game without hitting http://localhost:8000/reset/ api.
+PUT request for updating attacking number of offencive player.
 
-once the api says its time to start the game, hit http://localhost:8000/game/play
+The losing player gets removed from the game.
 
-It will take some time to announce the winner
+http://localhost:8000/refree/- to show the score of each game
 
-to see the status of matches, see the terminal where server is running. I have written the print statements that reveal the current status of the game.
+http://localhost:8000/round_reset - to start the new round
 
-all the attacking numbers and defence array are random generated using static method in models.py
+Repeat the game for winners of previous round.
+
+http://localhost:8000/refree/- to get the final winner
+
+Repeat the
 
 Thanks
