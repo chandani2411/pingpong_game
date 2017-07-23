@@ -12,7 +12,9 @@ http://localhost:8000/game_reset-  To reset all the parameters of the joined pla
 
 http://localhost:8000/game/- Check all players' starting status
 
-http://localhost:8000/game/<id>(get)- for getting details of a perticular player
+http://localhost:8000/game/<id>(get)- for getting details of a perticular player by using their id.
+
+like:http://localhost:8000/game/1
 
 Players having same defencive array  will play together.
 
